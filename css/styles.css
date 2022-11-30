@@ -1,0 +1,371 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.logos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(160, 159, 159);
+    border-bottom: 2px solid rgb(160, 159, 159);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.logos-container i{
+    margin-left: 15px;
+    width: 9px;
+    height: 9px;
+}
+
+.logos h1{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(160, 159, 159);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.buscador img{
+    width: 150px;
+}
+
+.buscadordef{
+    border: 2px solid rgb(173, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    padding-right: 200px;
+}
+
+
+
+.buscadordef input{
+    text-decoration: none;
+    border: none;
+}
+
+.buscadordef button{
+    background-color: transparent;
+    border: none;
+    align-self: right;
+}
+
+.iconos1 i{
+    margin-left: 20px;
+    
+}
+
+.navegacion{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.navegacion .refs{
+    padding-bottom: 30px;
+}
+
+
+.submenu{
+    width: 400px;
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 462px;
+    z-index: 5;
+    text-align: left;
+    line-height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    background: url(../images/banners/mens-banner.jpg) no-repeat left center;
+    background-size: cover;
+}
+
+.navegacion:hover .submenu{
+    display: block;
+}
+
+.submenu a{
+    text-decoration: none;
+    display: block;
+}
+
+
+.navegacion a{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+
+
+.banner{
+    width: 100%;
+    height: 70h;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.banner-contenido{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+.banner-texto1{
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    color: rgb(250, 96, 148);
+    margin-bottom: 20px;
+}
+
+.bannertitulo{
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Monoton', cursive;
+    line-height: 70px;
+    color: rgb(94, 93, 93);
+}
+
+.bannertitulo .h22{
+    word-spacing: 10px;
+}
+
+.bannertexto2{
+    color: gray;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.banner button{
+    padding: 11px;
+    margin-top: 30px;
+    background-color: rgb(255, 121, 165);
+    border: none;
+    font-family: 'Heebo', sans-serif;
+    font-family: 19px;
+    color: white;
+    border-radius: 7px;
+    align-items: center;
+    text-align: center;
+}
+
+.banner button p{
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-weight: 24px;
+}
+
+.card-container{
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-template-rows: auto auto;
+gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    position: relative;
+}
+
+.descuento{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    color: white;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+.card p{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: rgb(255, 121, 165);
+}
+
+.card h3{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
+}
+
+.card img{
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.card .logos2 i:first-child{
+    color: orange;
+}
+.card .logos2 i:nth-child(2){
+    color: orange;
+}
+.card .logos2 i:nth-child(3){
+    color: orange;
+}
+.card .logos2 i:nth-child(4){
+    color: grey;
+}
+.card .logos2 i:last-child{
+    color: grey;
+}
+
+.card .logos2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card button{
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 7px;
+}
+
+.card .precios-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.precios{
+    display: flex;
+    gap: 10px;
+}
+
+.precios p{
+    color:  black;
+    font-weight: bolder;
+}
+
+.precios p span{
+    text-decoration: line-through;
+    color: rgb(68, 68, 68);
+    font-weight: 400;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    font-family:  'Signika Negative', sans-serif;
+}
+
+.infofooter{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(99, 98, 98);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.infofooter li{
+    list-style: none;
+    line-height: 30px;
+    color: grey;
+}
+
+.infofooter h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 19px;
+    border-bottom: 1px solid pink;
+}
+
+footer .pagos{
+    align-items: center;
+    text-align: center;
+    color: grey;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+footer .pagos p{
+    font-family: 14px;  
+}
+
+
+@media (max-width:765){
+    .banner{
+        display: none;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 80%;
+    }
+
+}
+
+
+
+
